@@ -2,9 +2,12 @@ package recursion;
 
 public class SumofNaturalNumbers {
     public static int sum(int n) {
-        if (n == 0) {
-            return 0;
+        //base case
+        if (n == 1) {
+            return 1;
         }
+
+        //recursive case
         return n + sum(n - 1); 
     }
 

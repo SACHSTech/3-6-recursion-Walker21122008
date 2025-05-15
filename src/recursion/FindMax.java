@@ -2,17 +2,21 @@ package recursion;
 
 public class FindMax {
     public static int findMax(int[] arr, int n){
-        System.out.println("DEBUG 1: n=" + n);
+
+        //base case
         if(n == 1){
             return arr[n-1];
         }
-
         
+        //recursive case
         int max = findMax(arr, n-1);
-        System.out.println("DEBUG: n=" + n +", max=" + max);
 
-        if (max > arr[n-1]) return max;
-        else return arr[n-1];
+        if (max > arr[n-1]){
+            return max;
+        }
+        else{
+            return arr[n-1];
+        }
          
     }
     public static void main(String[] args) {

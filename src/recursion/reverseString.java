@@ -2,9 +2,13 @@ package recursion;
 
 public class reverseString {
     public static String reverse(String s) {
+
+        //base case
         if (s == null || s.length() <= 1) {
             return s;
         }
+
+        //recursion case
         return reverse(s.substring(1)) + s.substring(0,1);
     }
 

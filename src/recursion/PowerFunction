@@ -1,8 +1,12 @@
 public class PowerFunction {
     public static int power(int base, int exponent) {
+
+        //base case
         if (exponent == 0) {
             return 1;
         }
+
+        //recursion case
         return base * power(base, exponent - 1);
     }
 

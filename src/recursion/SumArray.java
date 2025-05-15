@@ -2,11 +2,15 @@ package recursion;
 
 public class SumArray {
     public static int sumArray(int[] arr, int n){
+
+        //base case
         if (n == 0){
             return 0;
-        } else{
-            return arr[n - 1] + sumArray(arr, n - 1);
-        }
+        } 
+
+        //recursive case
+        return arr[n - 1] + sumArray(arr, n - 1);
+        
     }
 
     public static void main(String[] args) {
