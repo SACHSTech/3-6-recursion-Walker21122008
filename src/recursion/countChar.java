@@ -1,10 +1,19 @@
 package recursion;
 
 public class countChar {
+    /**
+     * Recursively counts the occurrences of a specified character in a given string.
+     *
+     * @param s the input string
+     * @param c the character to count
+     * @return the number of occurrences of the character in the string
+     * @author Hasini Vijay Inbasri
+     */
+
     public static int countChar(String s, char c){
 
         //base case
-        if (s == null || s.length() == 0) {
+        if (s.length() == 0) {
             return 0;
         }
 

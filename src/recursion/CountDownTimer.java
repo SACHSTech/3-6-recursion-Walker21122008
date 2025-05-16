@@ -1,6 +1,13 @@
 package recursion;
 
 public class CountDownTimer {
+
+    /**
+     * Prints a countdown from the given number to 1.
+     *
+     * @param n the starting number of the countdown
+     * @author Hasini Vijay Inbasri
+     */
     public static void countDown(int n) {
 
         //base case

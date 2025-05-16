@@ -1,6 +1,13 @@
 package recursion;
 
 public class SumofNaturalNumbers {
+    /**
+     * Computes the sum of the first N natural numbers.
+     *
+     * @param n the number up to which the sum is calculated
+     * @return the sum of the first N natural numbers
+     * @author Hasini Vijay Inbasri
+     */
     public static int sum(int n) {
         //base case
         if (n == 1) {

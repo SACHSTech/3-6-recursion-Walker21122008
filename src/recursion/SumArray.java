@@ -1,6 +1,14 @@
 package recursion;
 
 public class SumArray {
+    /**
+     * Recursively calculates the sum of elements in an array.
+     *
+     * @param arr the array of integers
+     * @param n the number of elements to sum, should be the length of the array
+     * @return the sum of the first n elements of the array
+     * @author Hasini Vijay Inbasri
+     */
     public static int sumArray(int[] arr, int n){
 
         //base case

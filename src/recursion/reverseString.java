@@ -1,10 +1,17 @@
 package recursion;
 
-public class reverseString {
+public class ReverseString {
+    /**
+     * Reverses the given string using recursion.
+     *
+     * @param s The string to be reversed.
+     * @return The reversed string.
+     * @author Hasini Vijay Inbasri
+     */
     public static String reverse(String s) {
 
         //base case
-        if (s == null || s.length() <= 1) {
+        if (s.length() == 1) {
             return s;
         }
 

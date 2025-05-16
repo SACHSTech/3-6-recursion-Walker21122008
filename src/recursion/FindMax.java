@@ -1,6 +1,15 @@
 package recursion;
 
 public class FindMax {
+    /**
+     * Recursively finds the maximum value in an array.
+     *
+     * @param arr The array of integers to search.
+     * @param n The number of elements to consider in the array.
+     * @return The maximum integer found in the first n elements of the array.
+     * @author Hasini Vijay Inbasri
+     */
+
     public static int findMax(int[] arr, int n){
 
         //base case
