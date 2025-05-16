@@ -1,7 +1,7 @@
 package recursion;
 
 public class GenerateSubsets {
-    public static void GenerateSubsets(String s) {
+    public static void generateSubsets(String s) {
         int n = s.length();
         int total = 1 << n; 
 
@@ -18,6 +18,6 @@ public class GenerateSubsets {
 
 
     public static void main(String[] args) {
-        GenerateSubsets("abc");
+        generateSubsets("abc");
     }
 }
