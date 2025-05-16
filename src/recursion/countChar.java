@@ -1,6 +1,6 @@
 package recursion;
 
-public class countChar {
+public class CountChar {
     /**
      * Recursively counts the occurrences of a specified character in a given string.
      *
