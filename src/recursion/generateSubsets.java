@@ -1,21 +1,23 @@
 package recursion;
 
-public class generateSubsets {
-    public static void generateSubsets(String s) {
-        generateSubsets(s, "", 0);
-    }
+public class GenerateSubsets {
+    public static void GenerateSubsets(String s) {
+        int n = s.length();
+        int total = 1 << n; 
 
-    private static void generateSubsets(String s, String current, int index) {
-        if (index == s.length()) {
-            System.out.println(current);
-            return;
+        for (int i = 0; i < total; i++) {
+            String subset = "";
+            for (int j = 0; j < n; j++) {
+                if ((i & (1 << j)) != 0) {
+                    subset += s.charAt(j);
+                }
+            }
+            System.out.print(subset + " ");
         }
-
-        generateSubsets(s, current + s.charAt(index), index + 1);
-        generateSubsets(s, current, index + 1);
     }
+
 
     public static void main(String[] args) {
-        generateSubsets("abc");
+        GenerateSubsets("abc");
     }
 }
